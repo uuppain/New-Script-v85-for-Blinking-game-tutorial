@@ -11,7 +11,7 @@ Promise.all([
 
 function onReady(assets) {
 	  var counterNumber = assets[0];
-		var scoreNumber = p.outputs.getScalar("score");
+		var scoreNumber = Patches.outputs.getScalar("score");
 
 	  scoreNumber.then(e=>{
 	      e.monitor().subscribe(value=>{
